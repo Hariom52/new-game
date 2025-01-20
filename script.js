@@ -8,8 +8,8 @@
  }, 1000);
 
      document.onkeydown = function  (e) {
-    console.log("Key code is: ", e.keycode)
-    if (e.keycode == 38) {
+    console.log("Key code is: ", e.keyCode)
+    if (e.keyCode == 38) {
     dino = document.querySelector('.dino');
     dino.classList.add('animateDino');
     setTimeout(() => {
@@ -17,12 +17,12 @@
      }, 700);
     }
 
-if (e.keycode == 39) {
+if (e.keyCode == 39) {
         dino = document.querySelector('.dino');
         dinoX = paraseInt(window.getComputedStyle(dino, null). getPropertyValue('left'));
         dino.style.left = dinoX + 112 + "px";
        }
-       if(e.keycode == 37) {
+       if(e.keyCode == 37) {
         dino = document.querySelector('.dino');
         dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
         dino.style.left = (dinoX - 112) + "px";
@@ -44,8 +44,7 @@ setInterval(() =>  {
  offsetY = Math.abs(dy - oy);
  // console.log(offsetX, offsetY)
  if (offsetX < 73 && offsetY < 52) {
-    gameOver.innerHTML ="Game Over - Reload to Play Again"
-    console.log("gameOver");
+    gameover.innerHTML ="Game Over - Reload to Play Again"
     obstacle.classList.remove('obstacleAni')
   audiogo.play();
   setTimeout(() => {
