@@ -38,10 +38,10 @@
     left: 44vw;
 }
 .animateDino{
-    animation: dino 1.1s linear;
+    animation: dino 1.2s linear;
 }
 .obstacleAni{
-    animation: obstacleAni 1.5s linear infinite;
+    animation: obstacleAni 3s linear infinite;
 }
 
 .gameover{
